@@ -213,33 +213,41 @@ export default function Home() {
                   Add Student
                 </p>
               </div>
-              <label className="grid col-start-1 col-end-1 ">
+              <label className="grid col-start-1 col-end-1 text-black">
                 Enter the Name
               </label>
               <input
-                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5"
+                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5 outline-none focus:outline-black focus:scale-110"
                 required
+                placeholder="Enter the Name"
                 onChange={(e) => setName(e.target.value)}
               />
-              <label className="grid col-start-1 col-end-1 ">
+              <label className="grid col-start-1 col-end-1 text-rose-700 ">
                 Enter the Age
               </label>
               <input
-                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5"
+                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5 outline-none focus:outline-black focus:scale-110"
                 required
+                placeholder="Enter the age"
                 onChange={(e) => setAge(e.target.value)}
               />
-              <label className="grid col-start-1 col-end-1 ">
+              <label className="grid col-start-1 col-end-1 text-rose-700">
                 Enter the Address
               </label>
               <input
-                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5"
+                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5 outline-none focus:outline-black focus:scale-110"
                 required
+                placeholder="Enter the Address"
                 onChange={(e) => setAddress(e.target.value)}
               />
-              <label className="grid col-start-1 col-end-1 ">Choose Date</label>
+              <label
+                className="grid col-start-1 col-end-1 text-rose-700 "
+                placeholder="Choose Date"
+              >
+                Choose Date
+              </label>
               <input
-                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5"
+                className="text-white bg-slate-800 p-5 rounded-md mx-5 my-5 outline-none focus:outline-black focus:scale-110"
                 required
                 onChange={(e) => setDate(e.target.value)}
                 type="date"
